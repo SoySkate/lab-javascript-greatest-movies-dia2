@@ -61,13 +61,12 @@ console.log(dramaMoviesScore(movies));
 // ---------------------------------------------------------------------------------------
 // Iteration 5: Ordering by year - Order by year, ascending (in growing order)
 function orderByYear(moviesArray) {
-  //    NO SE RESOLVERLO RALLADO YA
   const orderedList = moviesArray.sort((a, b) => {
     return a.year === b.year ? a.title.localeCompare(b.title) : a.year - b.year;
   });
   return orderedList;
 }
-// console.log(orderByYear(movies));
+// console.log(orderByYear(`This is my orderedList by year`, movies));
 
 // ---------------------------------------------------------------------------------------
 // Iteration 6: Alphabetic Order - Order by title and print the first 20 titles
@@ -87,16 +86,26 @@ console.log(
 // ---------------------------------------------------------------------------------------
 // BONUS - Iteration 7: Time Format - Turn duration of the movies from hours to minutes
 function turnHoursToMinutes(moviesArray) {
-  //NOSE COMO SE HACE
-  // const hourToMinutes = moviesArray.map((movie) => {
+  //NOSE COMO SE HACE xdddddd
+  // const nuevoArrayOfHours = 0;
+  // const getDuration = moviesArray.map((movie) => {
+  //   const hours = movie.duration.split("");
+  //   if ((hours[0] === "1", "2", "3", "4")) {
+  //     hours.push(nuevoArrayOfHours);
+  //   }
+  //   // movies.duration[(3, 4)].push(nuevoArrayOfHours);
+  //   console.log(nuevoArrayOfHours);
+  //   const parseArray = parseInt(nuevoArrayOfHours);
+  //   return parseArray;
+  // });
   //   const posicionDurationHour = parseInt(movie.duration[]) * 60;
   //   console.log('This is hours position convert',posicionDurationHour);
   //   const posicionDurationMinutes = parseInt(movie.duration[1]);
   //   return;
   // });
-  // return hourToMinutes;
+  // return getDuration;
 }
-console.log("Hello I0m turning hours to minutes", turnHoursToMinutes(movies));
+// console.log("Hello I'm turning hours to minutes", turnHoursToMinutes(movies));
 
 // ---------------------------------------------------------------------------//NOSE COMO SE HACE y NO TENGO TIEMPO ;(
 // BONUS - Iteration 8: Best yearly score average - Best yearly score average
